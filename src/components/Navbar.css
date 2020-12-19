@@ -1,0 +1,21 @@
+.navbar {
+    height: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    font-size: 1.2rem;
+    position: left;
+    top: 0;
+    z-index: 0;
+    padding-top: 7vh;
+    padding-right: 6vw;
+  }
+  .navt {
+    margin-top: 20vh;
+    font-size: medium;
+  }
+  .formd {
+    padding-top: 10vh;
+  }
+  
+ 
