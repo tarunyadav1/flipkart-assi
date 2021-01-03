@@ -1,0 +1,68 @@
+.container{
+   display: flex;
+   cursor: pointer;
+   width: fit-content;
+   max-width: 100% ;
+   min-width: 10rem;
+   
+}
+
+.image-container{
+    margin: 0 5px;
+    align-self: center;
+}
+
+.image-container img{
+    width: 12rem;
+    height: 15rem;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 5px;
+}
+
+.name{
+    font-size: 24px;
+}
+
+.rating{
+    font-size: 14px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color :white;
+    margin: 5px 0;
+
+}
+
+
+
+.specs ul{
+    list-style-type: none; 
+
+}
+
+.specs li{
+    margin: 5px 0;
+}
+
+.price-container{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0 2rem ;
+}
+
+.compare-input{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.compare-input input:checked{
+ background-color: #2196F3;
+}
