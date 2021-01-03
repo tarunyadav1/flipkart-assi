@@ -4,7 +4,7 @@ import './compareProductFormat.css'
 
 const CompareItem = ({ item }) => {
 
-    const { id, name, rating, price, specs, imageUrl } = item
+    const { name, price, specs, imageUrl } = item
 
 
     return (
