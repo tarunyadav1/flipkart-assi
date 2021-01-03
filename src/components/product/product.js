@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './product.css'
 
 const Product = (props) => {
+
+    const [check, setCheck] = useState(false)
 
     const { id, name, rating, price, specs, imageUrl } = props.item
     const { compareItem, setCompareItem } = props
 
 
     const handleChange = (event) => {
+
+        setCheck(!check)
+
         const checkValue = event.target.checked
 
-        if (checkValue && compareItem.length < 4) {
+        if (checkValue && compareItem.length < 4 && !compareItem.includes(props.item)) {
             setCompareItem([...compareItem, props.item])
         }
 
@@ -32,7 +37,9 @@ const Product = (props) => {
             <div className="image-container">
                 <img src={imageUrl} alt="mobile phone"></img>
                 <div className="compare-input">
-                    <input onChange={handleChange} type='checkbox' id="compare" name="compare"></input>
+                    <input onChange={handleChange} type='checkbox' id="compare"
+                        checked={compareItem.includes(props.item)}
+                        name="compare"></input>
                     <label for="compare">Add to Compare</label>
 
                 </div>

@@ -11,9 +11,10 @@ const CompareProducts = ({ compareItem }) => {
 
         <div className="compare-product-container">
             {
-                compareItem.map((item) => {
-                    return <CompareProductFormat item={item} />
-                })
+                compareItem.length ?
+                    compareItem.map((item) => {
+                        return <CompareProductFormat item={item} />
+                    }) : <div>Add Items to Compare</div>
             }
         </div>
 
